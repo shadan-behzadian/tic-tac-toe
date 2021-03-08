@@ -1,0 +1,84 @@
+body {
+  background: linear-gradient(
+    45deg,
+    pink,
+    rgb(100, 173, 185),
+    white,
+    rgb(148, 78, 90)
+  );
+  height: 100vh;
+}
+
+td {
+  border: 25px inset #333;
+
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: rgb(190, 185, 185);
+}
+
+table {
+  border-collapse: collapse;
+  position: absolute;
+  left: 48%;
+  margin-left: -155px;
+  top: 20%;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+.endgame {
+  display: none;
+  width: 200px;
+  top: 120px;
+  background-color: rgba(47, 16, 65, 0.8);
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+.restart {
+  display: none;
+  padding: 10px;
+  border-radius: 3px;
+  width: 10%;
+  margin: 5% auto;
+  background: linear-gradient(rgb(186, 126, 214), pink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3vmin;
+  border-radius: 10px;
+}
+
+.restart:hover {
+  background-color: rgb(185, 114, 114);
+  cursor: pointer;
+  transform: scale(1.2);
+}
